@@ -58,4 +58,6 @@
 
 .jodit-status-bar {
   height: fit-content;
+  position: sticky;
+  bottom: 0;
 }

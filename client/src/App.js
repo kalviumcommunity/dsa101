@@ -35,7 +35,7 @@ function App() {
         <Route path="/notes" element={<Notes />} />
         <Route element={<Protected />}>
           <Route path="/admin-upload" element={<CourseUpload />} />
-          <Route path="/admin-upload/:id" element={<CourseUpdate />} />
+          <Route path="/admin-update/:id" element={<CourseUpdate />} />
           <Route path="/admin-topics" element={<AddTopics />} />
         </Route>
         <Route path="*" element={<NotFound />} />

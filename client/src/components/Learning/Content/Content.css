@@ -14,16 +14,16 @@
 
 .learning-content-container .learning-content {
   padding: 3rem 0;
-  font-family: "Source Code Pro";
-  color: var(--black);
+  font-family: "Source Code Pro" !important;
+  color: var(--black) !important;
 }
 
 .learning-content h1 {
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 3rem;
+  font-weight: 700 !important;
+  font-size: 2.4rem !important;
+  line-height: 3rem !important;
 
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
 }
 
 .learning-content iframe {
@@ -45,13 +45,16 @@
 
   padding: 3rem 2rem;
 
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  letter-spacing: 0.1rem;
+  font-weight: 400 !important;
+  font-size: 1.4rem !important;
+  line-height: 2rem !important;
+  letter-spacing: 0.1rem !important;
+
+  cursor: pointer;
 }
 
-.learning-content blockquote svg {
+.learning-content blockquote svg,
+.coding-logo {
   height: 18px !important;
   width: 74px !important;
   margin-top: -15px;
@@ -59,19 +62,52 @@
 }
 
 .learning-content blockquote a {
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.3rem;
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+  line-height: 2.3rem !important;
+}
+
+blockquote .question-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  width: 1.5rem;
+}
+
+blockquote:hover .question-arrow {
+  display: block;
 }
 
 .learning-content p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  letter-spacing: 0.1rem;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 1.8rem !important;
+  line-height: 3rem !important;
+  letter-spacing: 0.1rem !important;
+  margin-top: 4rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.learning-content br {
+  display: none;
+}
+
+.jodit-status-bar a.jodit-status-bar-link {
+  display: none;
+}
+
+.jodit-wysiwyg {
+  min-height: 40vh !important;
+  font-size: 16px;
+  font-family: poppins;
+  max-width: 60vw;
+}
+
+.jodit-status-bar {
+  height: fit-content;
+  position: sticky;
+  bottom: 0;
 }
 
 @media (max-width: 380px) {

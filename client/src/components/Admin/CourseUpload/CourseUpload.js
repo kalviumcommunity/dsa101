@@ -3,11 +3,13 @@ import JoditEditor from "jodit-react";
 import "./CourseUpload.css";
 import FormQuiz from "./FormQuiz/FormQuiz";
 import GetTopics from "../../../data/GetTopics";
+import { useNavigate } from "react-router";
 
 export default function CourseUpload() {
   const [isSaved, setIsSaved] = useState(false);
   const editor = useRef(null);
   const topics = GetTopics();
+  const navigate = useNavigate();
 
   const initialValues = {
     category: "Basics",
@@ -65,6 +67,7 @@ export default function CourseUpload() {
     } else {
       alert("Chapter added scuccessfully!");
       setIsSaved(true);
+      navigate(`/admin-update/${formData.chapter}`);
     }
   };
 

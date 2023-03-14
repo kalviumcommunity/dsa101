@@ -147,6 +147,7 @@ export default function CourseUpdate() {
               type="text"
               name="chapter_description"
               placeholder="Description"
+              value={formData.chapter_description}
               onChange={onChangeHandler}
               id="course-chapter-description"
             />
